@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<% if @current_user.present? && @current_user.admin?  %>
+
+<div class="editOptions">
+	<%= link_to 'New Post', new_post_path %>
+</div>
+
+<% end %>
+
+<% @posts.each do |post| %>
+	<div class="postFrame">
+		<div class="postTitle">
+			<h2><%= post.title %></h2>
+		</div>
+		<div class="posterId">
+			Posted by: <%= post.user.name %>, on: <%= post.created_at %>
+		</div>
+
+		<div class="postContent">
+			    <%= post.content %>
+		</div>
+
+		<% if @current_user.present? %>
+			<%= link_to 'Show', post %>
+			<%= link_to 'Edit', edit_post_path(post) %>
+			<%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+		<% end  %>
+	</div>
+<% end %>

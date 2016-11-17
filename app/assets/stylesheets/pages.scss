@@ -1,0 +1,30 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	background-color: #ecb68a
+}
+
+.container {
+	border: 1px solid gainsboro;
+	border-radius: 1em;
+	max-width: 80%;
+	margin: auto;
+	padding: 1em;
+
+	h2 {
+		text-align: center;
+	}
+}
+
+.textContent {
+	width: 80%;
+	margin: auto;
+
+}
+
+.mediaPlayer {
+	margin: 1em;
+	text-align: center;
+}

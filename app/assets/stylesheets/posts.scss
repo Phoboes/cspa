@@ -1,0 +1,19 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.postFrame {
+	margin-bottom: 1em;
+	padding: 1em;
+	border: 1px solid gainsboro;
+	border-radius: 1em;
+}
+
+.posterId {
+}
+
+.postContent {
+	border: 1px solid darkGreen;
+	padding: 1em;
+	margin: 1em 0;
+}
